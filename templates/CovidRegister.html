@@ -9,20 +9,20 @@
 </head>
 <body>
     <h1> Registro COVID-19</h1>
-    <form action method="get" >
-    <p>Nombre: <input type="text" name="nombre"> </p>   
-    <p>Usuario: <input type="text" name="usuario"> </p>
+    <form action="" method="get" name="formRegistro" onSubmit="validar_formulario()">
+    <p>Nombre: <input type="text" name="nombre" id="nombre"> </p>   
+    <p>Usuario: <input type="text" name="usuario" id="usuario"> </p>
     <p>
-        Sexo: <input type="radio" name="sexo" value="h">Hombre
+        Sexo: <input type="radio" name="sexo" value="h" id="sexo">Hombre
         <input type="radio" name="sexo" value="m">Mujer
     </p>
-    <p> Correo electrónico: <input type="email" size=30 name="correo"></p>
+    <p> Correo electrónico: <input type="email" size=30 name="correo" id="correo"></p>
     <p> Contraseña: <input type="password" id="pass" name="pass1"></p>
         <img  onmouseover=showPassword() onmouseout= hidePassword() src="{{ url_for('static', filename='images/view.png') }}"
         width="50" height="50">
         <br>
         <input type="checkbox" name="condiciones">Declaro haber leido y acepto las condiciones generales del programa y la normativa sobre protección de datos
     </p>
-    <button type="submit">Enviar</button>
+    <button type="submit" value="Enviar">Enviar</button>
 </body>
 </html>
