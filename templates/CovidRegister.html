@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario registro</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <script src="{ url_for('static', filename='js/validation.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/validation.js') }}"></script>
 </head>
 <body>
     <h1> Registro COVID-19</h1>
@@ -18,7 +18,7 @@
     </p>
     <p> Correo electrónico: <input type="email" size=30 name="correo"></p>
     <p> Contraseña: <input type="password" id="pass" name="pass1"></p>
-        <img  onmouseover=showPassword() onmouseout= hidePassword() src="{{ url_for('static', filename='images/view.jpg') }}"
+        <img  onmouseover=showPassword() onmouseout= hidePassword() src="{{ url_for('static', filename='images/view.png') }}"
         width="50" height="50">
         <br>
         <input type="checkbox" name="condiciones">Declaro haber leido y acepto las condiciones generales del programa y la normativa sobre protección de datos
