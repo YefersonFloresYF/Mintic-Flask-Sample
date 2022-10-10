@@ -9,7 +9,13 @@
 </head>
 <body>
     <h1> Registro COVID-19</h1>
-    <form action="" method="get" name="formRegistro" onSubmit="validar_formulario()">
+    <div>
+        {% for message in get_flashed_messages() %} <!-- aqui se captura el mensaje de flash y se muestra-->
+        {{ message }}
+        {% endfor %}
+    </div>
+    <!-- <form action="{{ url_for('register')}}" method="post" name="formRegistro" onSubmit="validar_formulario()"> -->
+    <form action="{{ url_for('CovidRegister')}}" method="post" name="formRegistro" onSubmit="validar_formulario()">
     <p>Nombre: <input type="text" name="nombre" id="nombre"> </p>   
     <p>Usuario: <input type="text" name="usuario" id="usuario"> </p>
     <p>

@@ -8,4 +8,4 @@ app = Flask(__name__)
 @app.route('/<string:nombre>/')
 def render(nombre=""): # Inicializa "nombre"
     # Retornar plantilla "index.html y pasar parámetro a  el método render_template
-	return render_template("index.html", nombre=nombre)
+	return render_template("route_sample.html", nombre=nombre)
