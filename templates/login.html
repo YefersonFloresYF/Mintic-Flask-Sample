@@ -13,7 +13,7 @@
 </head>
 <body>
     <h1>Ingreso</h1>
-    <form name="loginForm" method="get" action="{{ url_for('login')}}">
+    <form name="loginForm" method="post" action="{{ url_for('login')}}">
         <div>
             <label for="username">Usuario:</label>
             <input name="username" type="text" id="username" placeholder="digite su usuario"/>
@@ -24,6 +24,6 @@
             <input name="password" type="password" id="password" placeholder="digite su contraseña"/>
 
         </div>
-    <center><input type="submit" value="Ingresar"/></center>
+    <center><input type="submit" value="Enviar"/></center>
     </form>
 </body>
