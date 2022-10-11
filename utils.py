@@ -23,8 +23,7 @@ def isUsernameValid(user):
 		return False
 
 def isPasswordValid(password):
-	# if re.search(pass_reguex, password): #Password is not validated. Solution required
-	# 	return True
-	# else:
-	# 	return False
-    return True
+	if re.search(pass_reguex, password): #Password is not validated. Solution required
+		return True
+	else:
+		return False
